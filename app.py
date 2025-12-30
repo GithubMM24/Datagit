@@ -49,14 +49,14 @@ st.sidebar.write(df.columns.tolist())
 
 st.sidebar.markdown("---")
 st.sidebar.markdown("### Sample Queries")
-st.sidebar.code("""
-Show channel LinkedIn
-Average resume_score
-resume_score between 60 and 90
-resume_score descending
-count records
-What's going on in dataset
-""")
+# st.sidebar.code("""
+# Show channel LinkedIn
+# Average resume_score
+# resume_score between 60 and 90
+# resume_score descending
+# count records
+# What's going on in dataset
+# """)
 
 # Header
 st.markdown(
