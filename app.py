@@ -10,7 +10,7 @@ st.set_page_config(
 )
 
 # Sidebar and File Upload
-st.sidebar.header("📂 Upload CSV File")
+st.sidebar.header("Upload CSV File")
 
 uploaded_file = st.sidebar.file_uploader(
     "Drag & drop a CSV file",
@@ -47,16 +47,7 @@ st.sidebar.write("Rows:", df.shape[0])
 st.sidebar.write("Columns:", df.shape[1])
 st.sidebar.write(df.columns.tolist())
 
-# st.sidebar.markdown("---")
-# st.sidebar.markdown("### Sample Queries")
-# # st.sidebar.code("""
-# # Show channel LinkedIn
-# # Average resume_score
-# # resume_score between 60 and 90
-# # resume_score descending
-# # count records
-# # What's going on in dataset
-# # """)
+
 
 # Header
 st.markdown(
