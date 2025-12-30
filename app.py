@@ -6,7 +6,6 @@ from agent import DataAgent
 # Page Config
 st.set_page_config(
     page_title="Smart Data Query Agent",
-    page_icon="🤖",
     layout="wide"
 )
 
