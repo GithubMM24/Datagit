@@ -35,7 +35,7 @@ if uploaded_file is not None:
         st.session_state.messages = []
 
 else:
-    st.warning("⬅️ Please upload a CSV file to begin.")
+    st.warning("Please upload a CSV file to begin.")
     st.stop()
 
 agent = st.session_state.agent
@@ -43,13 +43,13 @@ agent = st.session_state.agent
 
 # Sidebar Dataset Info section
 st.sidebar.markdown("---")
-st.sidebar.header("📊 Dataset Info")
+st.sidebar.header("Dataset Info")
 st.sidebar.write("Rows:", df.shape[0])
 st.sidebar.write("Columns:", df.shape[1])
 st.sidebar.write(df.columns.tolist())
 
 st.sidebar.markdown("---")
-st.sidebar.markdown("### 🧪 Sample Queries")
+st.sidebar.markdown("### Sample Queries")
 st.sidebar.code("""
 Show channel LinkedIn
 Average resume_score
@@ -61,7 +61,7 @@ What's going on in dataset
 
 # Header
 st.markdown(
-    "<h1 style='text-align:center;'>🤖 Smart Data Query Agent</h1>"
+    "<h1 style='text-align:center;'> Smart Data Query Agent</h1>"
     "<p style='text-align:center;color:gray;'>Chat with your dataset using natural language</p>",
     unsafe_allow_html=True
 )
@@ -96,7 +96,7 @@ if user_query:
     # Agent response
     response = agent.process_query(user_query)
 
-    intent_msg = f"🧠 **Intent:** `{response['intent']}`"
+    intent_msg = f"**Intent:** `{response['intent']}`"
 
     st.session_state.messages.append({
         "role": "assistant",
