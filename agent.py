@@ -127,14 +127,13 @@ class DataAgent:
 # ===================================================
 # ===================================================
         # median
-        # if "average" in query or "medain" in query:
+        if  "medain" in query:
             col = self.find_column(query)
             if col in self.numeric_columns:
                 return {
                     "intent": "GET_median",
                     "result": round(df[col].median(), 2)
                 }
-
 # ===================================================
 # ===================================================
 
