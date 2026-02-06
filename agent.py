@@ -127,7 +127,7 @@ class DataAgent:
 # ===================================================
 # ===================================================
         # median
-        if  "medain" in query:
+        if  "median" in query:
             col = self.find_column(query)
             if col in self.numeric_columns:
                 return {
